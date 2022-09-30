@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+    *{
+padding: 0;
+box-sizing:border-box; margin: 0%;}
+
+#form{ text-align: center; border: 2rem solid rgb(15, 14, 14); margin: 10rem; background-color: rgba(208, 213, 150, 0.667);
+     border-radius: 0.5in;
+}
+h1{ color: rgb(215, 94, 94);}
+#submit{
+    background-color: #6bcf6e; height: 10vh;font-weight: 100;width: 12vw; hyphens: manual;
+  border-radius: 1in ;;
+  color: white;
+ 
+}
+
+
+  
+
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <form id="form" method="post">
+        <h1>Personal Details</h1>
+        <!-- First name :- -->
+        <label for="fname"> First name :-</label>
+        <input type="text" name="firstname" id="fname">
+        <br><br>
+        <!-- Last name : -->
+        <label for="lname"> last name :-</label>
+        <input type="text" name="lastname" id="lname">
+        <br><br>
+        <!-- Email id:- -->
+        <label for="email">Email:-</label>
+        <input type="email" name=“email" id="email">
+        <br><br>
+          <!-- Password: -->
+          <label for="password">Password:-</label>
+           <input type="password" name=“password" id="password">
+        <br><br>
+        <!-- Birthday:- -->
+        <label for="bdate">Birthdate:-</label>
+<input type="date" name="bday" id="bdate">
+<br><br>
+ <!-- color:- -->
+ <label for="color">color:-</label>
+<input type="color" name="select">
+   <br><br>
+   <!-- select file:- -->
+   <label for="file">Select File:-</label>
+   <input type="file" name="select file">
+   <br><br>
+
+   <!-- select Grnder:- -->
+         <label for="gender">Select Gender:-</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br> 
+        <!-- select browser:- -->
+        <label for=" select browser"> select browser:-</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br><br>
+        <label for="Write text">Write</label>
+        <textarea name="message" rows="10" cols="30" >
+        </textarea>
+
+        <br><br>
+       <input type="submit" name="submit button" id="submit" >
+       
+       </form>
+     
+</body>
+</html>
